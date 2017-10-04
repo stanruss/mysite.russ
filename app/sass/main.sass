@@ -1,0 +1,42 @@
+@import "fonts"
+@import "vars"
+@import "mixins/mixins"
+@import "mixins/mixin"
+@import "base"
+
+
+
+section
+	position: relative
+.content
+	div
+		height: 900px
+		width: 100%	
+.main-footer
+	padding: 60px 0
+	background-color: darken($main-color, 20%)
+	grid-template-columns: repeat(1, 1fr)
+	text-align: center
+	position: relative
+	@include border(1px, #000, top-bottom)
+	&::before
+		display: block
+		position: absolute
+		content: ''
+		height: 2px
+		background-color: #fff
+		width: 100%
+		top: 3px
+	&::after
+		display: block
+		position: absolute
+		content: ''
+		height: 2px
+		background-color: #fff
+		width: 100%
+		bottom: 3px
+
+.secondary-section
+	color: #000 darken($white, 10%)
+
+@import "media" 
