@@ -1,9 +1,9 @@
 $(function() {
 
 	$('#my-menu').mmenu({
-		extensions: [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
+		extensions: [ 'widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black' ],
 		navbar: {
-			title: '<img src="img/logo-1.svg" alt="Салон красоты Смитлер">'
+			title: 'Menu сайта'
 		},
 		offCanvas: {
 			position  : 'left'
@@ -156,9 +156,9 @@ $('a[href*="#"]')
     }
   });
   $(document).ready(function () {
-    $('.main-menu li').click(function(e) {
+    $('#my-menu li').click(function(e) {
 
-        $('.main-menu li').removeClass('active');
+        $('#my-menu li').removeClass('active');
 
         var $this = $(this);
         if (!$this.hasClass('active')) {
@@ -169,10 +169,10 @@ $('a[href*="#"]')
 });
   $(document).on( 'scroll', function(){
         if ($(window).scrollTop() > 70) {
-            $('.content div').addClass('headerdiv');
+            $('#my-content section').addClass('headerdiv');
             $('#my-header').addClass('header-fixed fadeInDown');
         } else {
-            $('.content div').removeClass('headerdiv');
+            $('#my-content section').removeClass('headerdiv');
             $('#my-header').removeClass('header-fixed fadeInDown');
         }
     });
