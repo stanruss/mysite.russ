@@ -13,6 +13,8 @@ html
 		letter-spacing: .025rem
 .top
 	background-color: $main-color
+	position: fixed
+	width: 100%
 .mm-navbar
 	img
 		height: .90em
@@ -21,6 +23,7 @@ html
 #my-menu.mm-listview, .mm-listview>li
 	transition: all .25s ease
 	overflow: hidden
+	color: $white
 	&.active
 		background-color: lighten($main-color, 20%)
 		color: darken($main-color, 20%)
@@ -32,9 +35,11 @@ html
 .Logo
 	line-height: 62px
 	color: $white
-	font-size: 1.2em
+	font-size: 18px
 	margin: 
-		left: 20px
-		right: 20px
-section
-	font-size: 1em
+		left: 40px
+		right: 40px
+	.fa
+		+margin(20px, right-left)
+
+	

@@ -170,10 +170,10 @@ $('a[href*="#"]')
   $(document).on( 'scroll', function(){
         if ($(window).scrollTop() > 70) {
             $('#my-content section').addClass('headerdiv');
-            $('#my-header').addClass('header-fixed fadeInDown');
+            $('#my-header').addClass('fadeInDown');
         } else {
             $('#my-content section').removeClass('headerdiv');
-            $('#my-header').removeClass('header-fixed fadeInDown');
+            $('#my-header').removeClass('fadeInDown');
         }
     });
   
